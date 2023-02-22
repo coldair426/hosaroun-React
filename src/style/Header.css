@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px #e5e5e5 solid;
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-left: 25px;
+}
+.header__brand > img {
+  margin-right: 5px;
+  height: 28px;
+}
+/* 햄버거메뉴 */
+.header > div:nth-child(2) {
+  margin-right: 15px;
+}
+.header > div:nth-child(2) > img {
+  height: 17px;
+}
