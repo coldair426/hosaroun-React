@@ -2,9 +2,13 @@ import React from 'react';
 // react-router-dom
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ navBox, setNavBox }) {
   return (
-    <header className='header'>
+    <header
+      className='header'
+      onClick={() => {
+        navBox && setNavBox(false);
+      }}>
       <Link to='/'>
         <div className='header__brand'>
           <img alt='logo' src='/logo.png' />
@@ -12,7 +16,13 @@ function Header() {
         </div>
       </Link>
       <div>
-        <img alt='menu' src='/icon/hamburger.png' />
+        <img
+          onClick={() => {
+            setNavBox(true);
+          }}
+          alt='menu'
+          src='/icon/hamburger.png'
+        />
       </div>
     </header>
   );

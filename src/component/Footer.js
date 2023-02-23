@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Footer() {
+function Footer({ navBox, setNavBox }) {
   return (
-    <footer className='footer'>
+    <footer
+      className='footer'
+      onClick={() => {
+        navBox && setNavBox(false);
+      }}>
       <div className='footer__contents'>
         <div>호사로운</div>
         <div>주소: 강원 춘천시 동면 순환대로 1154-48</div>

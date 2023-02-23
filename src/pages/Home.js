@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Home() {
+function Home({ navBox, setNavBox }) {
   return (
-    <main className='home'>
+    <main
+      className='home'
+      onClick={() => {
+        navBox && setNavBox(false);
+      }}>
       <div>
         <img className='home__img-horizontal' src='/img/view/view-horizontal-2.jpg' alt='view-horizontal-2' />
         <img className='home__img-vertical' src='/img/living-room/living-room-vertical-4.jpg' alt='living-room-vertical-4' />

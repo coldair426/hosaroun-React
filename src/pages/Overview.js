@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Overview() {
+function Overview({ navBox, setNavBox }) {
   return (
-    <main className='overview'>
+    <main
+      className='overview'
+      onClick={() => {
+        navBox && setNavBox(false);
+      }}>
       <div className='overview__sentence'>
         <span className='overview__sentence-impact'>야경 명소</span> 구봉산에 자리한
         <br />

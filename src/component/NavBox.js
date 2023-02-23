@@ -2,17 +2,21 @@ import React from 'react';
 // react-router-dom
 import { Link } from 'react-router-dom';
 
-function NavBox() {
+function NavBox({ setNavBox }) {
   return (
-    <nav className='navbox'>
+    <nav
+      onClick={() => {
+        setNavBox(false);
+      }}
+      className='navbox'>
       <button>
         <img src='./icon/x_square_icon.png' alt='close' />
       </button>
       <Link className='navbox__link' to={'/overview'}>
         <div>Overview</div>
       </Link>
-      <Link className='navbox__link' to={'/rooms'}>
-        <div>Rooms</div>
+      <Link className='navbox__link' to={'/photograph'}>
+        <div>Photograph</div>
       </Link>
       <Link className='navbox__link' to={'/location'}>
         <div>Location</div>

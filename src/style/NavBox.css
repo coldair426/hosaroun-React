@@ -1,13 +1,15 @@
 .navbox {
-  visibility: hidden;
   display: flex;
-  position: absolute;
+  position: fixed;
   background-color: white;
   top: 0px;
   right: 0px;
   width: 60%;
   height: 100%;
   flex-direction: column;
+  border: 1px #e5e5e5 solid;
+  z-index: 100;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .navbox > button {
   display: flex;
