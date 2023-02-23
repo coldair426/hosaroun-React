@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Booknow({ navBox, setNavBox }) {
+function Booknow({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   return (
     <main
       className='booknow'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div className='booknow__booknow'>
         <div className='booknow__booking'>

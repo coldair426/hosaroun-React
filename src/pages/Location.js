@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CopyAlert from '../component/CopyAlert';
 import Kakaomap from './../component/Kakaomap';
 
-function Location({ navBox, setNavBox }) {
+function Location({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   const [anim, setAnim] = useState('');
-
   return (
     <main
       className='location'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div className='location-container flex-col'>
         <div className='location-container__description'>
@@ -24,7 +26,7 @@ function Location({ navBox, setNavBox }) {
                     setAnim('copy-alert__end');
                     setTimeout(() => {
                       setAnim('');
-                    }, 2000);
+                    }, 1000);
                   },
                   () => {}
                 );

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RoomsCarousel from '../component/RoomsCarousel';
 
-function Photograph({ navBox, setNavBox }) {
+function Photograph({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   return (
     <main
       className='photograph'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <h1>실내</h1>
       <div className='photograph__carousels'>

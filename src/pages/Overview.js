@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Overview({ navBox, setNavBox }) {
+function Overview({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   return (
     <main
       className='overview'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div className='overview__sentence'>
         <span className='overview__sentence-impact'>야경 명소</span> 구봉산에 자리한

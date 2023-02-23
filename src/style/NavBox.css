@@ -10,7 +10,13 @@
   border: 1px #e5e5e5 solid;
   z-index: 100;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: width 50ms;
 }
+.navbox__ending {
+  width: 0;
+  overflow: hidden;
+}
+
 .navbox > button {
   display: flex;
   height: 60px;

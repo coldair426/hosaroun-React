@@ -2,14 +2,13 @@ import React from 'react';
 // react-router-dom
 import { Link } from 'react-router-dom';
 
-function NavBox({ setNavBox }) {
+function NavBox({ navBoxTr, setNavBoxTr }) {
   return (
-    <nav
-      onClick={() => {
-        setNavBox(false);
-      }}
-      className='navbox'>
-      <button>
+    <nav className={`navbox ${navBoxTr}`}>
+      <button
+        onClick={() => {
+          setNavBoxTr('navbox__ending');
+        }}>
         <img src='./icon/x_square_icon.png' alt='close' />
       </button>
       <Link className='navbox__link' to={'/overview'}>

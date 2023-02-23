@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Home({ navBox, setNavBox }) {
+function Home({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   return (
     <main
       className='home'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div>
         <img className='home__img-horizontal' src='/img/view/view-horizontal-2.jpg' alt='view-horizontal-2' />

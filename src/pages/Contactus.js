@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Contactus({ navBox, setNavBox }) {
+function Contactus({ navBoxTr, setNavBoxTr }) {
+  useEffect(() => {
+    setNavBoxTr('navbox__ending');
+  }, []);
   return (
     <main
       className='contactus'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div className='contactus__contents'>
         <img className='contactus__img' src='./contactusPage/contactus.jpg' alt='contactusimage' />

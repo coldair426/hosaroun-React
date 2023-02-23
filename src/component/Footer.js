@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Footer({ navBox, setNavBox }) {
+function Footer({ navBoxTr, setNavBoxTr }) {
   return (
     <footer
       className='footer'
       onClick={() => {
-        navBox && setNavBox(false);
+        navBoxTr === '' && setNavBoxTr('navbox__ending');
       }}>
       <div className='footer__contents'>
         <div>호사로운</div>

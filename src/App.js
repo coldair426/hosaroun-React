@@ -32,23 +32,23 @@ import Booknow from './pages/Booknow';
 import Contactus from './pages/Contactus';
 
 function App() {
-  // navBox 설정
-  const [navBox, setNavBox] = useState(false);
+  // navBox
+  const [navBoxTr, setNavBoxTr] = useState('navbox__ending');
+
   return (
     <React.Fragment>
       <Reset />
-      <Header navBox={navBox} setNavBox={setNavBox} />
-      {/* NavBox 컴포넌트 조건부렌더링 */}
-      {navBox && <NavBox setNavBox={setNavBox} />}
+      <Header navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
+      <NavBox navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
       <Routes>
-        <Route path='/' element={<Home navBox={navBox} setNavBox={setNavBox} />} />
-        <Route path='/overview' element={<Overview navBox={navBox} setNavBox={setNavBox} />} />
-        <Route path='/photograph' element={<Photograph navBox={navBox} setNavBox={setNavBox} />} />
-        <Route path='/location' element={<Location navBox={navBox} setNavBox={setNavBox} />} />
-        <Route path='/booknow' element={<Booknow navBox={navBox} setNavBox={setNavBox} />} />
-        <Route path='/contactus' element={<Contactus navBox={navBox} setNavBox={setNavBox} />} />
+        <Route path='/' element={<Home navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
+        <Route path='/overview' element={<Overview navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
+        <Route path='/photograph' element={<Photograph navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
+        <Route path='/location' element={<Location navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
+        <Route path='/booknow' element={<Booknow navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
+        <Route path='/contactus' element={<Contactus navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />} />
       </Routes>
-      <Footer navBox={navBox} setNavBox={setNavBox} />
+      <Footer navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
     </React.Fragment>
   );
 }
