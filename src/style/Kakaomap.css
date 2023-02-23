@@ -1,0 +1,30 @@
+#map {
+  width: 68%;
+  height: 500px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+/*---------------------------------------------------------------*/
+/* 1024px 이하 */
+@media all and (max-width: 1024px) {
+}
+
+/*---------------------------------------------------------------*/
+/* 768px 미만 */
+@media all and (max-width: 767px) {
+  #map {
+    width: 80%;
+    height: 500px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+}
+
+/*---------------------------------------------------------------*/
+/* 280px 미만 */
+@media all and (max-width: 280px) {
+  #map {
+    margin-bottom: 33px;
+  }
+}

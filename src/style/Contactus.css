@@ -1,18 +1,29 @@
-.booknow {
+.contactus {
+}
+.contactus__contents {
+  position: relative;
+  line-height: 0;
+}
+.contactus__img {
+  width: 100%;
+}
+.contactus__contact {
+  width: 70%;
   display: flex;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
-  background-color: #e5e5e5;
+  line-height: 1;
 }
-.booknow__booknow {
-  width: 60%;
-  margin: 0px;
+.contactus__contact > div {
+  margin: 0px 60px 0px 60px;
 }
-.booknow__booknow > div {
-  margin: 60px 0px;
+.contact__item {
+  margin: 100px 0px 100px 0px;
 }
-.booknow__booknow h1::before,
-.booknow__booknow h2::before {
-  display: block;
+.contact__tiltle::before {
   content: '';
   width: 6px;
   height: 18px;
@@ -20,28 +31,22 @@
   margin-right: 6px;
   border-radius: 10px;
 }
-.booknow__booknow h1,
-.booknow__booknow h2 {
+.contact__tiltle {
   display: flex;
   align-items: center;
+  letter-spacing: 5px;
   font-size: 25px;
   font-weight: 900;
-  margin: 25px 0px;
-  letter-spacing: 2px;
+  margin: 0;
 }
-.booknow__booknow h3 {
-  margin: 20px 0px 20px 20px;
-  font-size: 21px;
+.contact__value {
+  margin-top: 40px;
+  margin-left: 15px;
+  font-size: 17px;
   font-weight: 900;
+  letter-spacing: 5px;
 }
-.booknow__booknow li {
-  font-size: 20px;
-  margin: 10px 0px 10px 40px;
-}
-.booknow__impact {
-  font-weight: 900;
-}
-.booknow__impact-link {
+.contact__value-link-impact {
   color: #fca311;
 }
 /*---------------------------------------------------------------*/
@@ -49,27 +54,22 @@
 /*---------------------------------------------------------------*/
 /* 1024px 이하 */
 @media all and (max-width: 1024px) {
-  .booknow__booknow {
-    width: 75%;
-    margin: 30px 0px;
+  .contactus__contact > div {
+    margin: 0px 30px 0px 30px;
   }
-  .booknow__booknow > div {
-    margin: 30px 0px;
+  .contact__item {
+    margin: 70px 0px 70px 0px;
   }
-  .booknow__booknow h1::before,
-  .booknow__booknow h2::before {
+  .contact__tiltle::before {
     width: 5px;
     height: 14px;
     margin-right: 5px;
   }
-  .booknow__booknow h1,
-  .booknow__booknow h2 {
+  .contact__tiltle {
     font-size: 20px;
   }
-  .booknow__booknow h3 {
-    font-size: 17px;
-  }
-  .booknow__booknow li {
+  .contact__value {
+    margin-top: 30px;
     font-size: 15px;
   }
 }
@@ -78,37 +78,45 @@
 /*---------------------------------------------------------------*/
 /* 768px 미만 */
 @media all and (max-width: 767px) {
-  .booknow__booknow > div {
-    margin: 10px 0px;
+  .contactus__contact {
+    width: 50%;
+    flex-direction: column;
+    top: 50%;
+    left: 65%;
   }
-  .booknow__booknow h1::before,
-  .booknow__booknow h2::before {
+  .contactus__contact > div {
+    margin: 0px;
+  }
+  .contact__item {
+    margin: 0px 0px 30px 0px;
+  }
+  .contact__tiltle::before {
     width: 4px;
     height: 10px;
     margin-right: 4px;
   }
-  .booknow__booknow h1,
-  .booknow__booknow h2 {
+  .contact__tiltle {
     font-size: 15px;
-    margin: 15px 0px;
   }
-  .booknow__booknow h3 {
-    margin: 12px 0px 12px 12px;
-    font-size: 14px;
-  }
-  .booknow__booknow li {
+  .contact__value {
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: 13px;
-    margin: 5px 0px 5px 20px;
-    line-height: 18px;
+    letter-spacing: 2px;
   }
 }
-
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /* 280px 미만 */
 @media all and (max-width: 280px) {
-  .booknow__booknow {
-    margin: 20px 0px;
+  .contactus__contact {
+    left: 60%;
+  }
+  .contact__item {
+    margin: 0px 0px 20px 0px;
+  }
+  .contact__value {
+    margin-top: 5px;
   }
 }

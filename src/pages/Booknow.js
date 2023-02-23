@@ -7,7 +7,7 @@ function Booknow({ navBox, setNavBox }) {
       onClick={() => {
         navBox && setNavBox(false);
       }}>
-      <div className='main__booknow'>
+      <div className='booknow__booknow'>
         <div className='booknow__booking'>
           <h1>실시간 예약</h1>
           <ul>

@@ -16,6 +16,9 @@ import './style/NavBox.css';
 import './style/Overview.css';
 import './style/Photograph.css';
 import './style/Booknow.css';
+import './style/Contactus.css';
+import './style/Location.css';
+import './style/Kakaomap.css';
 // component
 import Header from './component/Header';
 import Footer from './component/Footer';

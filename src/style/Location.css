@@ -1,0 +1,160 @@
+.location {
+  background-color: #e5e5e5;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-container {
+  box-sizing: content-box;
+}
+.location-container__description {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+.container__description--hypen {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  margin: 0 0 15px 0;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.container__description--hypen::before {
+  display: block;
+  content: '';
+  width: 6px;
+  height: 18px;
+  background-color: #14213d;
+  margin-right: 6px;
+  border-radius: 10px;
+}
+
+.container__description__text-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container__description--text {
+  font-size: 20px;
+  margin: 10px 0px 10px 40px;
+  vertical-align: middle;
+}
+.img-link-btn {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 18px;
+  color: #fca311;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 40px;
+  padding: 0;
+  border: 0px;
+  background-color: transparent;
+}
+
+/* 스낵바 디자인 */
+.copy-alert {
+  position: fixed;
+  z-index: 70;
+  bottom: 0;
+  background-color: #fca311;
+  border: 0px;
+  color: white;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+/*---------------------------------------------------------------*/
+/* 1024px 이하 */
+@media all and (max-width: 1024px) {
+  .location-container__description {
+    width: 75%;
+  }
+  .location-container__description-2nd {
+    margin-top: 30px;
+  }
+  .container__description--hypen {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .container__description--hypen::before {
+    width: 5px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  .container__description--text {
+    font-size: 15px;
+  }
+  .img-link-btn {
+    font-size: 15px;
+  }
+  /* 스낵바 디자인 */
+  .copy-alert {
+    font-size: 15px;
+    width: 300px;
+    height: 45px;
+  }
+}
+/*---------------------------------------------------------------*/
+/* 768px 미만 */
+@media all and (max-width: 767px) {
+  .location-container__description {
+    margin-top: 43px;
+  }
+  .location-container__description-2nd {
+    margin-top: 25px;
+  }
+  .container__description--hypen {
+    font-size: 15px;
+    margin: 0 0 8px 0;
+  }
+  .container__description--hypen::before {
+    width: 4px;
+    height: 10px;
+    margin-right: 4px;
+  }
+  .container__description--text {
+    font-size: 13px;
+    margin: 0px 0px 0px 20px;
+    line-height: 20px;
+  }
+  .img-link-btn {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  /* 스낵바 디자인 */
+  .copy-alert {
+    width: 250px;
+  }
+}
+/*---------------------------------------------------------------*/
+/* 280px 미만 */
+@media all and (max-width: 280px) {
+  .location-container__description {
+    margin-top: 33px;
+  }
+  /* 스낵바 디자인 */
+  .copy-alert {
+    width: 200px;
+  }
+}
