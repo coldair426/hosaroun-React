@@ -15,6 +15,7 @@ import './style/Home.css';
 import './style/NavBox.css';
 import './style/Overview.css';
 import './style/Photograph.css';
+import './style/Booknow.css';
 // component
 import Header from './component/Header';
 import Footer from './component/Footer';
