@@ -1,9 +1,9 @@
-import { React } from 'react';
+import { React, useEffect } from 'react';
 import { Alert } from 'react-bootstrap';
 
-function CopyAlert() {
+function CopyAlert({ anim, setAnim }) {
   return (
-    <Alert className='copy-alert' key={'warning'} variant={'warning'}>
+    <Alert className={`copy-alert ${anim}`} key={'warning'} variant={'warning'}>
       복사 완료
     </Alert>
   );

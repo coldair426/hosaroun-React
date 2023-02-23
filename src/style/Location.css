@@ -71,6 +71,7 @@
 
 /* 스낵바 디자인 */
 .copy-alert {
+  visibility: hidden;
   position: fixed;
   z-index: 70;
   bottom: 0;
@@ -83,6 +84,12 @@
   font-size: 20px;
   font-weight: 900;
   text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.copy-alert__end {
+  visibility: visible;
+  opacity: 1;
 }
 /*---------------------------------------------------------------*/
 /* 1024px 이하 */

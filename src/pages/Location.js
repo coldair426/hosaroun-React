@@ -3,7 +3,8 @@ import CopyAlert from '../component/CopyAlert';
 import Kakaomap from './../component/Kakaomap';
 
 function Location({ navBox, setNavBox }) {
-  const [copyButton, setCopyButton] = useState(false);
+  const [anim, setAnim] = useState('');
+
   return (
     <main
       className='location'
@@ -20,14 +21,12 @@ function Location({ navBox, setNavBox }) {
               onClick={() => {
                 navigator.clipboard.writeText('강원도 춘천시 동면 순환대로 1154-48').then(
                   () => {
-                    setCopyButton(true);
+                    setAnim('copy-alert__end');
                     setTimeout(() => {
-                      setCopyButton(false);
+                      setAnim('');
                     }, 2000);
                   },
-                  () => {
-                    setCopyButton(false);
-                  }
+                  () => {}
                 );
               }}>
               주소 복사
@@ -39,7 +38,7 @@ function Location({ navBox, setNavBox }) {
           <div className='container__description--text'>제이콥스 스테이션 건너편, 검은색 가건물 옆길로 올라오시면 양문형 큰 대문이 보입니다.</div>
         </div>
         <Kakaomap />
-        {copyButton && <CopyAlert />}
+        <CopyAlert anim={anim} setAnim={setAnim} />
       </div>
     </main>
   );
