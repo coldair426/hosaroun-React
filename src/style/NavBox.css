@@ -1,57 +1,64 @@
 .navbox {
-  display: flex;
-  position: fixed;
-  background-color: white;
-  top: 0px;
-  right: 0px;
-  width: 60%;
-  height: 100%;
-  flex-direction: column;
-  border: 1px #e5e5e5 solid;
-  z-index: 100;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  transition: width 50ms;
+  display: none;
 }
-.navbox__ending {
-  width: 0;
-  overflow: hidden;
-}
+/*---------------------------------------------------------------*/
+/* 768px 미만 */
+@media all and (max-width: 767px) {
+  .navbox {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    border: 1px #e5e5e5 solid;
+    z-index: 100;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: width 50ms;
+  }
+  .navbox__ending {
+    width: 0;
+    overflow: hidden;
+  }
 
-.navbox > button {
-  display: flex;
-  height: 60px;
-  border: 0px;
-  background-color: white;
-  justify-content: right;
-  align-items: center;
-}
-.navbox > button > img {
-  height: 20px;
-  margin-right: 15px;
-}
-.navbox__link {
-  display: flex;
-  height: 60px;
-  font-size: 17px;
-  font-weight: 600;
-  align-items: center;
-}
-.navbox__link > div {
-  margin-left: 20px;
-}
-.navbox__sns {
-  border-top: 1px #e5e5e5 solid;
-  font-size: 15px;
-  font-weight: 600;
-  padding-top: 10px;
-}
-.navbox__sns a {
-  display: flex;
-  height: 40px;
-  margin-left: 20px;
-  align-items: center;
-}
-.navbox__sns img {
-  height: 15px;
-  margin-right: 4px;
+  .navbox > button {
+    display: flex;
+    height: 60px;
+    border: 0px;
+    background-color: white;
+    justify-content: right;
+    align-items: center;
+  }
+  .navbox > button > img {
+    height: 20px;
+    margin-right: 15px;
+  }
+  .navbox__link {
+    display: flex;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 600;
+    align-items: center;
+  }
+  .navbox__link > div {
+    margin-left: 20px;
+  }
+  .navbox__sns {
+    border-top: 1px #e5e5e5 solid;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  .navbox__sns a {
+    display: flex;
+    height: 40px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .navbox__sns img {
+    height: 15px;
+    margin-right: 4px;
+  }
 }

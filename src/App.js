@@ -19,10 +19,14 @@ import './style/Booknow.css';
 import './style/Contactus.css';
 import './style/Location.css';
 import './style/Kakaomap.css';
+import './style/PcHeader.css';
+import './style/PcNavBar.css';
 // component
 import Header from './component/Header';
 import Footer from './component/Footer';
 import NavBox from './component/NavBox';
+import PcHeader from './component/PcHeader';
+import PcNavBar from './component/PcNavBar';
 // pages
 import Home from './pages/Home';
 import Overview from './pages/Overview';
@@ -38,6 +42,8 @@ function App() {
   return (
     <React.Fragment>
       <Reset />
+      <PcNavBar />
+      <PcHeader />
       <Header navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
       <NavBox navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
       <Routes>

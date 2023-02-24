@@ -1,0 +1,71 @@
+.PcNavBar {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 0px;
+}
+.PcNavBar__logo {
+  display: flex;
+  align-items: center;
+}
+.PcNavBar__logo > img {
+  width: 30px;
+  margin-right: 5px;
+}
+.PcNavBar__logo > div {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.PcNavBar__navigation {
+  display: flex;
+  margin: 0 10px;
+}
+.PcNavBar__navigation > div {
+  font-size: 20px;
+  text-align: center;
+  width: 130px;
+  letter-spacing: 1px;
+}
+.PcNavBar__sns > a > img {
+  width: 20px;
+}
+.PcNavBar__sns > a:nth-child(2) > img {
+  margin-left: 10px;
+}
+/*---------------------------------------------------------------*/
+/* 1024px 이하 */
+@media all and (max-width: 1024px) {
+  .PcNavBar {
+    padding: 10px 0px;
+  }
+  .PcNavBar__logo > img {
+    width: 25px;
+  }
+  .PcNavBar__logo > div {
+    font-size: 20px;
+  }
+  .PcNavBar__navigation {
+    margin: 0 5px;
+  }
+  .PcNavBar__navigation > div {
+    font-size: 17px;
+    width: 110px;
+  }
+  .PcNavBar__sns > a > img {
+    width: 15px;
+  }
+  .PcNavBar__sns > a:nth-child(2) > img {
+    margin-left: 5px;
+  }
+}
+/*---------------------------------------------------------------*/
+/* 768px 미만 */
+@media all and (max-width: 767px) {
+  .PcNavBar {
+    display: none;
+  }
+}
