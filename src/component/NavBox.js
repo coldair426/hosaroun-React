@@ -1,6 +1,6 @@
 import React from 'react';
 // react-router-dom
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBox({ navBoxTr, setNavBoxTr }) {
   return (
@@ -11,19 +11,19 @@ function NavBox({ navBoxTr, setNavBoxTr }) {
         }}>
         <img src='./icon/x_square_icon.png' alt='close' />
       </button>
-      <NavLink className='navbox__link' to={'/overview'}>
+      <NavLink className={({ isActive }) => (isActive ? 'navbox__link mobile-active' : 'navbox__link')} to={'/overview'}>
         <div>Overview</div>
       </NavLink>
-      <NavLink className='navbox__link' to={'/photograph'}>
+      <NavLink className={({ isActive }) => (isActive ? 'navbox__link mobile-active' : 'navbox__link')} to={'/photograph'}>
         <div>Photograph</div>
       </NavLink>
-      <NavLink className='navbox__link' to={'/location'}>
+      <NavLink className={({ isActive }) => (isActive ? 'navbox__link mobile-active' : 'navbox__link')} to={'/location'}>
         <div>Location</div>
       </NavLink>
-      <NavLink className='navbox__link' to={'/booknow'}>
+      <NavLink className={({ isActive }) => (isActive ? 'navbox__link mobile-active' : 'navbox__link')} to={'/booknow'}>
         <div>Book now</div>
       </NavLink>
-      <NavLink className='navbox__link' to={'/contactus'}>
+      <NavLink className={({ isActive }) => (isActive ? 'navbox__link mobile-active' : 'navbox__link')} to={'/contactus'}>
         <div>Contact us</div>
       </NavLink>
       <div className='navbox__sns'>

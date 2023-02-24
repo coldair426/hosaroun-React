@@ -14,7 +14,8 @@ a:link,
 a:visited {
   color: #000000;
 }
-.active::before {
+/* react router dom active style */
+.pc-active::before {
   content: '';
   width: 6px;
   height: 6px;
@@ -22,7 +23,19 @@ a:visited {
   background-color: #fca311;
   margin-right: 3px;
 }
-.active {
+.pc-active {
+  display: flex;
+  justify-content: center;
+}
+.mobile-active::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 8px;
+  background-color: #fca311;
+  margin-right: 3px;
+}
+.mobile-active {
   display: flex;
   justify-content: center;
 }

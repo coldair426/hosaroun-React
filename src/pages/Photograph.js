@@ -4,7 +4,7 @@ import RoomsCarousel from '../component/RoomsCarousel';
 function Photograph({ navBoxTr, setNavBoxTr }) {
   useEffect(() => {
     setNavBoxTr('navbox__ending');
-  }, []);
+  }, [setNavBoxTr]);
   return (
     <main
       className='photograph'

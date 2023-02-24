@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function Home({ navBoxTr, setNavBoxTr }) {
   useEffect(() => {
     setNavBoxTr('navbox__ending');
-  }, []);
+  }, [setNavBoxTr]);
   return (
     <main
       className='home'

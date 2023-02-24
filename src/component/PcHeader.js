@@ -23,19 +23,29 @@ function PcHeader() {
       </div>
       <nav className='pc-header__navigation'>
         <div>
-          <NavLink to='/overview'>Overview</NavLink>
+          <NavLink to='/overview' className={({ isActive }) => (isActive ? 'pc-active' : undefined)}>
+            Overview
+          </NavLink>
         </div>
         <div>
-          <NavLink to='/photograph'>Photograph </NavLink>
+          <NavLink to='/photograph' className={({ isActive }) => (isActive ? 'pc-active' : undefined)}>
+            Photograph{' '}
+          </NavLink>
         </div>
         <div>
-          <NavLink to='/location'>Location </NavLink>
+          <NavLink to='/location' className={({ isActive }) => (isActive ? 'pc-active' : undefined)}>
+            Location{' '}
+          </NavLink>
         </div>
         <div>
-          <NavLink to='/booknow'>Book now </NavLink>
+          <NavLink to='/booknow' className={({ isActive }) => (isActive ? 'pc-active' : undefined)}>
+            Book now{' '}
+          </NavLink>
         </div>
         <div>
-          <NavLink to='/contactus'>Contact us </NavLink>
+          <NavLink to='/contactus' className={({ isActive }) => (isActive ? 'pc-active' : undefined)}>
+            Contact us{' '}
+          </NavLink>
         </div>
       </nav>
     </header>

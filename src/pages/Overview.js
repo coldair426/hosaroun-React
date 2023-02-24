@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function Overview({ navBoxTr, setNavBoxTr }) {
   useEffect(() => {
     setNavBoxTr('navbox__ending');
-  }, []);
+  }, [setNavBoxTr]);
   return (
     <main
       className='overview'

@@ -46,7 +46,7 @@ function App() {
       setScrollY(window.pageYOffset);
     });
     document.querySelector('.pc-header').offsetHeight < scrollY ? setPcNavBar('') : setPcNavBar('PcNavBarEnd');
-  });
+  }, [scrollY]);
 
   return (
     <React.Fragment>

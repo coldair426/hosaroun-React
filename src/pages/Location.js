@@ -5,7 +5,7 @@ import Kakaomap from './../component/Kakaomap';
 function Location({ navBoxTr, setNavBoxTr }) {
   useEffect(() => {
     setNavBoxTr('navbox__ending');
-  }, []);
+  }, [setNavBoxTr]);
   const [anim, setAnim] = useState('');
   return (
     <main
