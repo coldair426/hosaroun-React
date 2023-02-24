@@ -7,6 +7,28 @@ function Location({ navBoxTr, setNavBoxTr }) {
     setNavBoxTr('navbox__ending');
   }, [setNavBoxTr]);
   const [anim, setAnim] = useState('');
+
+  const copyButton = () => {
+    const copyTextArea = document.createElement('textarea');
+    copyTextArea.value = '강원 춘천시 동면 순환대로 1154-48';
+    copyTextArea.style.top = '0';
+    copyTextArea.style.left = '0';
+    copyTextArea.style.position = 'fixed';
+    document.body.appendChild(copyTextArea);
+    copyTextArea.focus();
+    copyTextArea.select();
+    try {
+      document.execCommand('copy');
+      setAnim('copy-alert__end');
+      setTimeout(() => {
+        setAnim('');
+      }, 1000);
+    } catch (err) {
+      console.error('텍스트 복사에 실패했습니다.', err);
+    }
+    document.body.removeChild(copyTextArea);
+  };
+
   return (
     <main
       className='location'
@@ -18,19 +40,7 @@ function Location({ navBoxTr, setNavBoxTr }) {
           <div className='container__description--hypen'>주소</div>
           <div className='container__description__text-area'>
             <div className='container__description--text'>강원도 춘천시 동면 순환대로 1154-48.</div>
-            <button
-              className='img-link-btn'
-              onClick={() => {
-                navigator.clipboard.writeText('강원도 춘천시 동면 순환대로 1154-48').then(
-                  () => {
-                    setAnim('copy-alert__end');
-                    setTimeout(() => {
-                      setAnim('');
-                    }, 1000);
-                  },
-                  () => {}
-                );
-              }}>
+            <button className='img-link-btn' onClick={copyButton}>
               주소 복사
             </button>
           </div>
@@ -40,7 +50,7 @@ function Location({ navBoxTr, setNavBoxTr }) {
           <div className='container__description--text'>제이콥스 스테이션 건너편, 검은색 가건물 옆길로 올라오시면 양문형 큰 대문이 보입니다.</div>
         </div>
         <Kakaomap />
-        <CopyAlert anim={anim} setAnim={setAnim} />
+        <CopyAlert anim={anim} />
       </div>
     </main>
   );

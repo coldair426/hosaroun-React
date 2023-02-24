@@ -1,5 +1,6 @@
 .PcNavBar {
   width: 100%;
+  opacity: 0.9;
   display: flex;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;

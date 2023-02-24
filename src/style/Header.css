@@ -5,6 +5,7 @@
 /* 768px 미만 */
 @media all and (max-width: 767px) {
   .header {
+    opacity: 0.9;
     position: sticky;
     top: 0;
     background-color: #ffffff;
