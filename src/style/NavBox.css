@@ -41,11 +41,16 @@
     font-size: 17px;
     font-weight: 600;
     align-items: center;
+    justify-content: center;
   }
   .navbox__link > div {
-    margin-left: 20px;
+    padding-left: 1px;
   }
   .navbox__sns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-top: 1px #e5e5e5 solid;
     font-size: 15px;
     font-weight: 600;
@@ -54,7 +59,6 @@
   .navbox__sns a {
     display: flex;
     height: 40px;
-    margin-left: 20px;
     align-items: center;
   }
   .navbox__sns img {

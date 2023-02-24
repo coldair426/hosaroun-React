@@ -1,6 +1,6 @@
 import { React } from 'react';
 // react-router-dom
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function PcNavBar({ pcNavBar }) {
   return (
@@ -11,19 +11,19 @@ function PcNavBar({ pcNavBar }) {
       </Link>
       <div className='PcNavBar__navigation'>
         <div>
-          <Link to='/overview'>Overview</Link>
+          <NavLink to='/overview'>Overview</NavLink>
         </div>
         <div>
-          <Link to='/photograph'>Photograph </Link>
+          <NavLink to='/photograph'>Photograph </NavLink>
         </div>
         <div>
-          <Link to='/location'>Location </Link>
+          <NavLink to='/location'>Location </NavLink>
         </div>
         <div>
-          <Link to='/booknow'>Book now </Link>
+          <NavLink to='/booknow'>Book now </NavLink>
         </div>
         <div>
-          <Link to='/contactus'>Contact us </Link>
+          <NavLink to='/contactus'>Contact us </NavLink>
         </div>
       </div>
       <div className='PcNavBar__sns'>

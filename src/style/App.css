@@ -14,3 +14,15 @@ a:link,
 a:visited {
   color: #000000;
 }
+.active::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 8px;
+  background-color: #fca311;
+  margin-right: 3px;
+}
+.active {
+  display: flex;
+  justify-content: center;
+}
