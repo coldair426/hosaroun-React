@@ -2,15 +2,13 @@ import { React } from 'react';
 // react-router-dom
 import { Link } from 'react-router-dom';
 
-function PcNavBar() {
+function PcNavBar({ pcNavBar }) {
   return (
-    <div className='PcNavBar'>
-      <a href='./index.html'>
-        <Link className='PcNavBar__logo' to='/'>
-          <img src='./icon/hosaroun-logo.png' alt='logo' />
-          <div>호사로운</div>
-        </Link>
-      </a>
+    <div className={`PcNavBar ${pcNavBar}`}>
+      <Link className='PcNavBar__logo' to='/'>
+        <img src='./icon/hosaroun-logo.png' alt='logo' />
+        <div>호사로운</div>
+      </Link>
       <div className='PcNavBar__navigation'>
         <div>
           <Link to='/overview'>Overview</Link>

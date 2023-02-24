@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {} from 'react-bootstrap';
@@ -36,13 +36,22 @@ import Booknow from './pages/Booknow';
 import Contactus from './pages/Contactus';
 
 function App() {
-  // navBox
+  // NavBox
   const [navBoxTr, setNavBoxTr] = useState('navbox__ending');
+  // PcNavBar
+  const [pcNavBar, setPcNavBar] = useState('PcNavBarEnd');
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrollY(window.pageYOffset);
+    });
+    document.querySelector('.pc-header').offsetHeight < scrollY ? setPcNavBar('') : setPcNavBar('PcNavBarEnd');
+  });
 
   return (
     <React.Fragment>
       <Reset />
-      <PcNavBar />
+      <PcNavBar pcNavBar={pcNavBar} />
       <PcHeader />
       <Header navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
       <NavBox navBoxTr={navBoxTr} setNavBoxTr={setNavBoxTr} />
