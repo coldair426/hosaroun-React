@@ -21,7 +21,7 @@
 - 프로젝트명 : 호사로운-React
 - 기간 : 2023.02.21. ~ 2023.02.24.
 - 목표 : 기존 HTML, CSS, Vanilla JS로 제작한 호사로운 페이지를 React로 리팩토링
-- 기존 페이지를 보려면 **[여기로](https://github.com/coldair426/hosaroun)**
+- **기존 페이지 Repository를 보고싶다면 [여기를](https://github.com/coldair426/hosaroun) 참고하세요.**
 
 # 페이지 구성
 
