@@ -51,8 +51,8 @@
 - Mobile sticky header(CSS)
 - Mobile navigation box(React)
 - PC navigation bar(React)
-- CSS reset(styled-reset)
 - Location map(Kakao map api)
+- CSS reset(styled-reset)
 - Router(React Router-dom)
 - 현재 페이지 표시(React Router-dom)
 - Copy alert(React Bootstrap)
@@ -95,4 +95,4 @@
 
 ---
 
-**Full README가 보고 싶다면 [velog](https://velog.io/@coldair426/series/%ED%98%B8%EC%82%AC%EB%A1%9C%EC%9A%B4%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)를 참고하세요.**
+**Full README가 보고 싶다면 [velog](https://velog.io/@coldair426/series/%ED%98%B8%EC%82%AC%EB%A1%9C%EC%9A%B4-React)를 참고하세요.**
