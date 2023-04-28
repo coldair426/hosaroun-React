@@ -7,6 +7,9 @@ function Location({ navBoxTr, setNavBoxTr }) {
     setNavBoxTr('navbox__ending');
   }, [setNavBoxTr]);
   const [anim, setAnim] = useState('');
+  useEffect(() => {
+    window.scrollTo(0, 0); // 페이지 최상단으로 스크롤링
+  }, []);
 
   const copyButton = () => {
     const copyTextArea = document.createElement('textarea');

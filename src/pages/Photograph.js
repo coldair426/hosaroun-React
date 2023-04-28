@@ -5,6 +5,9 @@ function Photograph({ navBoxTr, setNavBoxTr }) {
   useEffect(() => {
     setNavBoxTr('navbox__ending');
   }, [setNavBoxTr]);
+  useEffect(() => {
+    window.scrollTo(0, 0); // 페이지 최상단으로 스크롤링
+  }, []);
   return (
     <main
       className='photograph'
