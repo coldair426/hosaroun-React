@@ -27,11 +27,11 @@
 
 ## pc
 
-| <img src="./README_src/1.jpg" alt="index.html"> | <img src="./README_src/2.jpg" alt="overview.html"> | <img src="./README_src/3.jpg" alt="rooms.html"> |
+| <img src="./README_src/1.png" alt="index.html"> | <img src="./README_src/2.png" alt="overview.html"> | <img src="./README_src/3.png" alt="rooms.html"> |
 | :---------------------------------------------: | :------------------------------------------------: | :---------------------------------------------: |
 |                     Home.js                     |                    Overview.js                     |                  Photograph.js                  |
 
-| <img src="./README_src/4.jpg" alt="location.html"> | <img src="./README_src/5.jpg" alt="booknow.html"> | <img src="./README_src/6.jpg" alt="contactus.html"> |
+| <img src="./README_src/4.png" alt="location.html"> | <img src="./README_src/5.png" alt="booknow.html"> | <img src="./README_src/6.png" alt="contactus.html"> |
 | :------------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------------: |
 |                    Location.js                     |                    Booknow.js                     |                    Contactus.js                     |
 
