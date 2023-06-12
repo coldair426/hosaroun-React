@@ -1,29 +1,45 @@
-<div align = "center"><img src="./README_src/hosaroun_react.png" alt="hosaroun-logo"></div>
+<br/>
+<div align = "center"><img src="./README_src/hosaroun_react.png" alt="hosaroun-logo" width='350px'></div>
+<br/>
+<!-- Index -->
 
-<!-- 목차 -->
-
-**목차**
+**Index**
 
 <ul>
-    <li><a href="#개요">개요</a></li>
-    <li><a href="#페이지-구성">페이지 구성</a></li>
-    <li><a href="#기능">기능</a></li>
-    <li><a href="#배포주소">배포주소</a></li>
-    <li><a href="#browser-support">Browser Support</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#stacks">Stacks</a></li>
-    <li><a href="#members">Members</a></li>
+   <li><a href="#browser-support">Browser Support</a></li>
+   <li><a href="#members">Members</a></li>
 </ul>
 
 ---
 
-# 개요
+# Overview
 
-- 프로젝트명 : 호사로운-React
-- 기간 : 2023.02.21. ~ 2023.02.24.
-- 목표 : 기존 HTML, CSS, Vanilla JS로 제작한 호사로운 페이지를 React로 리팩토링
+- **프로젝트명**: 호사로운(React 리팩토링)
+
+- **기간**: 2023.02.21. ~ 2023.02.24.
+
+- **목표**: 기존 호사로운(JS) 페이지를 React로 리팩토링 하였습니다.
+
+- **배포주소**: http://hosaroun.dothome.co.kr/
+
 - **기존 페이지 Repository를 보고싶다면 [여기를](https://github.com/coldair426/hosaroun) 참고하세요.**
 
-# 페이지 구성
+# Introduction
+
+기존 춘천 호사로운 팬션의 정보를 제공하는 웹 서비스를 React로 리팩토링 하였습니다.
+
+**주요 기능**:
+
+- **사진**: 캐로셀 슬라이더를 이용해 다양한 사진을 효과적으로 제공합니다.
+
+- **카카오맵 API**: 카카오맵 API를 이용해 위치를 정확하게 표현하고, 지도보기와 길찾기 링크를 제공합니다.
+
+# Configuration
 
 ## pc
 
@@ -45,53 +61,40 @@
 | :------------------------------------------------------: | :-----------------------------------------------------: | :-------------------------------------------------------: |
 |                       Location.js                        |                       Booknow.js                        |                       Contactus.js                        |
 
-# 기능
+# Roadmap
 
-- Responsive Web(CSS)
-- Mobile sticky header(CSS)
-- Mobile navigation box(React)
-- PC navigation bar(React)
-- CSS reset(styled-reset)
-- Location map(Kakao map api)
-- Router(React Router-dom)
-- 현재 페이지 표시(React Router-dom)
-- Copy alert(React Bootstrap)
-- Carousel slider(React Bootstrap)
-
-## 앞으로 구현하고자 하는 것은
-
-- 관리자 페이지
-- CRUD 게시판
-
-# 배포주소
-
-- http://hosaroun.dothome.co.kr/
-
-# Browser Support
-
-- <img src = "https://img.shields.io/badge/chrome-support-success?style=flat&logo=googlechrome&logoColor=white&labelColor=4285F4" height = "25x">
-- <img src = "https://img.shields.io/badge/Edge-support-success?style=flat&logo=microsoftedge&logoColor=white&labelColor=0078D7" height = "25px">
-- <img src = "https://img.shields.io/badge/safari-support-success?style=flat&logo=safari&logoColor=white&labelColor=000000" height = "25px">
+- [x] REACT 리펙토링
+- [x] Copy alert(React Bootstrap)
+- [x] Carousel slider(React Bootstrap)
+- [x] Location map(Kakao map api)
+- [x] 현재 페이지 표시(React Router-dom)
+- [x] Responsive Web(CSS)
+- [x] Mobile sticky header(CSS)
+- [x] Mobile navigation box(React)
+- [x] PC navigation bar(React)
+- [x] CSS reset(styled-reset)
+- [x] Router(React Router-dom)
+- [ ] 관리자 페이지
+- [ ] CRUD 게시판
 
 # Stacks
 
-## Environment
+- **Environment**: <img src = "https://img.shields.io/badge/VSCode-007ACC?logo=visual studio code" > <img src = "https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" > <img src = "https://img.shields.io/badge/GitHub-181717?logo=github" >
 
-- <img src = "https://img.shields.io/badge/VSCode-007ACC?logo=visual studio code" height = "30px">
-- <img src = "https://img.shields.io/badge/Git-white?logo=git" height = "30px">
-- <img src = "https://img.shields.io/badge/GitHub-181717?logo=github" height = "30px">
+- **Developement**:
+  - **FRONT-END**: <img src = "https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white"> <img src = "https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white"> <img src = "https://img.shields.io/badge/CSS3-1572B6?logo=CSS3&logoColor=1572B6&logoColor=white" >
 
-## Developement
+# Browser Support
 
-- <img src = "https://img.shields.io/badge/React-white?logo=react" height = "30px">
+<img src = "https://img.shields.io/badge/AppleSafari-000000?logo=safari&logoColor=white" > <img src = "https://img.shields.io/badge/GoogleChrome-4285F4?logo=googlechrome&logoColor=white" > <img src = "https://img.shields.io/badge/MicrosoftEdge-0078D7?logo=microsoftedge&logoColor=white" >
 
 # Members
 
-## 홍
+- **HONG(FRONT-END)**
 
-- https://github.com/coldair426
-- https://velog.io/@coldair426
-- coldair426@gmail.com
+  - **GitHub**: https://github.com/coldair426
+  - **Blog**: https://velog.io/@coldair426
+  - **Mail**: coldair426@gmail.com
 
 ---
 
